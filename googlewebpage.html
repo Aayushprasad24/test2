@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url("https://www.xda-developers.com/gmail-material-you-android-12/");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        
+        .container {
+            width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+        
+        a {
+            color: #007bff;
+            text-decoration: none;
+            margin-top: 10px;
+            display: block;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        h1 {
+            text-align: left;
+            margin-top: 50px;
+        }
+        
+        .next-button {
+            margin-left: auto;
+            /* Move the button to the left side */
+        }
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <img src="google.jpg" class="w-40 cursor-pointer">
+    <h1 class="">Sign In</h1>
+    <form>
+        <label for="email">Email or Phone:</label>
+        <input type="email" id="email" name="email" placeholder="Your email or phone"><br><br>
+
+    </form>
+    <a href="#">Forgot email?</a><br>
+    <a href="#">Not your computer? Use Guest mode to sign in privately.</a><br>
+    <a href="#">Learn more about using Guest mode</a><br>
+    <a href="#">Create account</a>
+    <div class="next-button">
+        <a href="#" class="bg-blue-700 rounded-3xl py-3 px-8 font-medium inline-block ml-4 text-white">Next </a>
+    </div>
+</body>
+
+</html>

@@ -10,24 +10,28 @@
             font-family: sans-serif;
             margin: 0;
             padding: 20px;
-            background-image: url("https://www.xda-developers.com/gmail-material-you-android-12/");
+            background-image: url("https://www.xda-developers.com/files/2021/05/Gmail-Android-12.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
         
         .container {
             width: 350px;
-            margin: 50px auto;
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
             background-color: white;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         
         h1 {
-            text-align: center;
             margin-bottom: 20px;
         }
         
@@ -40,10 +44,10 @@
         label {
             display: block;
             margin-bottom: 5px;
+            text-align: left;
         }
         
-        input[type="email"],
-        input[type="password"] {
+        input[type="email"] {
             width: 100%;
             padding: 10px;
             border: 1px solid #ccc;
@@ -75,33 +79,44 @@
             text-decoration: underline;
         }
         
-        h1 {
-            text-align: left;
-            margin-top: 50px;
+        .next-button {
+            margin-top: 20px;
+            text-align: right;
         }
         
-        .next-button {
-            margin-left: auto;
-            /* Move the button to the left side */
+        .next-button a {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 3px;
+            text-decoration: none;
+        }
+        
+        .next-button a:hover {
+            background-color: #0056b3;
+        }
+        
+        img {
+            cursor: pointer;
+            margin-bottom: 20px;
         }
     </style>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <img src="google.jpg" class="w-40 cursor-pointer">
-    <h1 class="">Sign In</h1>
-    <form>
-        <label for="email">Email or Phone:</label>
-        <input type="email" id="email" name="email" placeholder="Your email or phone"><br><br>
-
-    </form>
-    <a href="#">Forgot email?</a><br>
-    <a href="#">Not your computer? Use Guest mode to sign in privately.</a><br>
-    <a href="#">Learn more about using Guest mode</a><br>
-    <a href="#">Create account</a>
-    <div class="next-button">
-        <a href="#" class="bg-blue-700 rounded-3xl py-3 px-8 font-medium inline-block ml-4 text-white">Next </a>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Logo_2013_Google.png/320px-Logo_2013_Google.png" class="w-40">
+        <h1>Sign In</h1>
+        <form>
+            <label for="email">Email or Phone:</label>
+            <input type="email" id="email" name="email" placeholder="Your email or phone"><br><br>
+            <button type="submit">Next</button>
+        </form>
+        <a href="#">Forgot email?</a>
+        <a href="#">Not your computer? Use Guest mode to sign in privately.</a>
+        <a href="#">Learn more about using Guest mode</a>
+        <a href="#">Create account</a>
     </div>
 </body>
 
